@@ -29,6 +29,8 @@ const sessionConfig = {
   }),
 };
 
+server.use(session(sessionConfig));
+
 server.use(helmet());
 server.use(express.json());
 server.use(cors());
